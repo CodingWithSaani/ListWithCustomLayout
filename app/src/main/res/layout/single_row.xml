@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/singleRow_RL"
+    android:background="@drawable/border"
+    android:layout_margin="5dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/singleRow_IV"
+        android:src="@drawable/ic_flag"
+        />
+
+    <TextView
+        android:fontFamily="@font/helvetica_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/singleRow_TV"
+        android:layout_toRightOf="@id/singleRow_IV"
+        android:text="Dummy Name"
+        android:gravity="center|left"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/singleRow_IV"
+        android:layout_below="@id/singleRow_TV"
+        android:id="@+id/singleRow_phoneTV"
+        android:text="098765543211"
+        android:gravity="center|left"
+        android:layout_marginLeft="10dp"/>
+
+
+</RelativeLayout>
